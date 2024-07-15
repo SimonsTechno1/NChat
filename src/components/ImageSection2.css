@@ -1,0 +1,29 @@
+/* src/ImageSection.css */
+.image-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+  background-color: #fff; /* Match the background color of the section */
+}
+
+.image-section-img {
+  max-width: 50%;
+  height: auto;
+}
+
+.image-section-content {
+  max-width: 50%;
+  text-align: left;
+}
+
+.image-section-content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #000; /* Adjust the color if needed */
+}
+
+.image-section-content p {
+  font-size: 1.2rem;
+  color: #555; /* Adjust the color if needed */
+}

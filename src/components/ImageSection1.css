@@ -1,0 +1,31 @@
+.image-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+  background-color: #fdfdfd; /* Match the background color of the section */
+  margin-top: 10%; /* Add margin from the top */
+}
+
+.image-section-img {
+  width: 500px; /* Set the image width */
+  height: 500px; /* Set the image height */
+  margin-right: 20px; /* Add margin to the right of the image */
+}
+
+.image-section-content {
+  max-width: 50%;
+  text-align: left;
+  padding-left: 20px; /* Add padding to separate the text from the image */
+}
+
+.image-section-content h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #000; /* Adjust the color if needed */
+}
+
+.image-section-content p {
+  font-size: 1.2rem;
+  color: #555; /* Adjust the color if needed */
+}

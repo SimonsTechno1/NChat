@@ -1,0 +1,21 @@
+/* src/components/BookDemoButton.css */
+.book-demo-button {
+    background-color: #c0f522;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: #000;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .book-demo-button:hover .arrow-icon {
+    transform: translateX(5px);
+  }
+  
+  .book-demo-button .arrow-icon {
+    transition: all 0.3s ease-in-out;
+  }
+  

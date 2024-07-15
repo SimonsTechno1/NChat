@@ -1,0 +1,62 @@
+/* src/Navbar.css */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-logo img {
+  height: 18px;
+  width: auto;
+}
+
+.navbar-links {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.navbar-item {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  position: relative;
+}
+
+.navbar-item img {
+  width: 10px;
+  height: 10px;
+}
+
+.navbar-item a {
+  text-decoration: none;
+  color: #555;
+  font-size: 16px;
+}
+
+.navbar-item:hover a {
+  color: #000;
+}
+
+.navbar-demo .book-demo-button {
+  background-color: #c0f522;
+  padding: 10px 20px;
+  border-radius: 20px;
+  text-decoration: none;
+  color: #000;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+.book-demo-button:hover .arrow-icon {
+  transform: translateX(5px);
+}
+
+.book-demo-button .arrow-icon {
+  transition: all 0.3s ease-in-out;
+}
