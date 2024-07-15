@@ -4,6 +4,7 @@ import landingImage from './assets/landingpage.png'; // Import the landing page 
 import BookDemoButton from './components/BookDemoButton'; // Import the reusable button component
 import ImageSection1 from './components/ImageSection1'; // Import the new image section component
 import ImageSection2 from './components/ImageSection2'; // Import the new image section component
+import ImageSection3 from './components/ImageSection3'; // Import the new image section component
 import TestimonialSection from './components/TestimonialSection'; // Import the testimonial section component
 
 const LandingPage = () => {
@@ -79,6 +80,7 @@ const LandingPage = () => {
       <ImageSection2 />
       {/* Add the new TestimonialSection below the image sections */}
       <TestimonialSection />
+      <ImageSection3 />
     </div>
   );
 };
