@@ -6,6 +6,8 @@ import ImageSection1 from './components/ImageSection1'; // Import the new image 
 import ImageSection2 from './components/ImageSection2'; // Import the new image section component
 import ImageSection3 from './components/ImageSection3'; // Import the new image section component
 import TestimonialSection from './components/TestimonialSection'; // Import the testimonial section component
+import CaseStudySection from './components/CaseStudySection'; // Import the new case study section component
+
 
 const LandingPage = () => {
   return (
@@ -81,6 +83,9 @@ const LandingPage = () => {
       {/* Add the new TestimonialSection below the image sections */}
       <TestimonialSection />
       <ImageSection3 />
+
+      {/* Add the new CaseStudySection below the testimonial section */}
+      <CaseStudySection />
     </div>
   );
 };
