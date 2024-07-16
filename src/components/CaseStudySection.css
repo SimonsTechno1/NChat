@@ -21,7 +21,7 @@
     border: 2px solid #e7e7e7;
     border-radius: 5%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 300px; /* Adjust width to fit content */
+    width: 320px; /* Adjust width to fit content */
     overflow: hidden;
     transition: transform 0.3s ease;
     display: flex;
@@ -34,12 +34,13 @@
   }
   
   .case-study-image-wrapper {
-    width: 300px;
+    width: 320px;
     height: 208.09px;
     overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
+    object-fit: contain;
   }
   
   .case-study-image {
