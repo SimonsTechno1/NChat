@@ -9,6 +9,8 @@ import TestimonialSection from './components/TestimonialSection'; // Import the 
 import CaseStudySection from './components/CaseStudySection'; // Import the new case study section component
 import SolutionSection from './components/SolutionSection'; // Import the new solution section component
 import MgaCTA from './components/MgaCTA'; // Import the new MgaCTA component
+import Footer from './components/Footer'; // Import the Footer component
+
 
 
 
@@ -95,6 +97,9 @@ const LandingPage = () => {
       <SolutionSection />
 
       <MgaCTA /> {/* Add the new MgaCTA section */}
+
+      <Footer /> {/* Add the Footer component here */}
+
 
     </div>
   );
