@@ -1,9 +1,7 @@
-/* src/LandingPage.css */
 .landing-page {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 50px;
   background-color: #fdfdfd;
 }
 
@@ -15,9 +13,10 @@
 }
 
 .landing-content {
-  max-width: 50%;
+  max-width: 45%;
   text-align: left;
   margin-right: 20px;
+  margin-left: 50px;
 }
 
 .landing-content h1 {
@@ -64,7 +63,7 @@
 }
 
 .marquee-container {
-  width: 100%;
+  width: 95%;
   margin-top: 20px;
   padding: 10px 0;
   background: #f9f9f9;
@@ -107,5 +106,102 @@
   }
   100% {
     transform: translateX(-50%);
+  }
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .landing-content-wrapper {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .landing-content {
+    max-width: 80%;
+    margin: 20px 0;
+    text-align: center;
+  }
+
+  .landing-content h1 {
+    font-size: 2rem;
+  }
+
+  .landing-content p {
+    font-size: 1rem;
+  }
+
+  .landing-image-cover {
+    width: 450px;
+    height: 450px;
+  }
+
+  .marquee-container {
+    padding: 10px 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .landing-content-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .landing-content {
+    max-width: 90%;
+    margin: 20px 0;
+    text-align: center;
+  }
+
+  .landing-content h1 {
+    font-size: 1.8rem;
+  }
+
+  .landing-content p {
+    font-size: 1rem;
+  }
+
+  .landing-image-cover {
+    width: 400px;
+    height: 400px;
+  }
+
+  .marquee-container {
+    padding: 10px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .landing-content-wrapper {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .landing-content {
+    max-width: 100%;
+    margin: 10px 0;
+  }
+
+  .landing-content h1 {
+    font-size: 1.5rem;
+  }
+
+  .landing-content p {
+    font-size: 0.9rem;
+  }
+
+  .landing-button {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+  }
+
+  .landing-image-cover {
+    width: 300px;
+    height: 300px;
+  }
+
+  .client-logos-marquee_logo {
+    max-height: 40px;
   }
 }

@@ -1,12 +1,17 @@
-// src/Navbar.js
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
-import logo from './assets/NChat-logo.webp'; // Import the logo image
-import dropdownIcon from './assets/svgexport-3.svg'; // Import the dropdown SVG
-import BookDemoButton from './components/BookDemoButton'; // Import the reusable button component
+import logo from './assets/NChat-logo.webp';
+import dropdownIcon from './assets/svgexport-3.svg';
+import BookDemoButton from './components/BookDemoButton';
 
 const Navbar = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
+
   return (
     <nav className="navbar">
       <div className="navbar-logo">
@@ -14,7 +19,7 @@ const Navbar = () => {
           <img src={logo} alt="LimeChat Logo" />
         </Link>
       </div>
-      <div className="navbar-links">
+      <div className={`navbar-links ${menuOpen ? 'open' : ''}`}>
         <div className="navbar-item">
           <Link to="/products">Products</Link>
           <img src={dropdownIcon} alt="Dropdown" />
@@ -35,8 +40,11 @@ const Navbar = () => {
         </div>
       </div>
       <div className="navbar-demo">
-        <BookDemoButton /> {/* Use the reusable button component */}
+        <BookDemoButton />
       </div>
+      <button className="menu-toggle" onClick={toggleMenu}>
+        <img src={dropdownIcon} alt="Menu" />
+      </button>
     </nav>
   );
 };

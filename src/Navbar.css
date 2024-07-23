@@ -1,11 +1,11 @@
-/* src/Navbar.css */
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
   background-color: white;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  position: relative;
 }
 
 .navbar-logo img {
@@ -59,4 +59,62 @@
 
 .book-demo-button .arrow-icon {
   transition: all 0.3s ease-in-out;
+}
+
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .navbar-links {
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+  }
+
+  .navbar-links.open {
+    display: flex;
+  }
+
+  .navbar-item {
+    width: 100%;
+    padding: 10px 20px;
+    justify-content: space-between;
+  }
+
+  .navbar-demo {
+    width: 100%;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    padding: 10px;
+  }
+
+  .navbar-logo img {
+    height: 15px;
+  }
+
+  .book-demo-button {
+    padding: 8px 16px;
+  }
 }

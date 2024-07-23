@@ -18,8 +18,8 @@ body {
 }
 
 .logo-img {
-  width: auto;  /* Set the width to 86 pixels */
-  height: 17px; /* Set the height to 17 pixels */
+  width: auto;
+  height: 17px;
 }
 
 .nav-links {
@@ -53,4 +53,40 @@ body {
 
 .demo-button:hover {
   background-color: #c4e51a;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .nav-item {
+    margin-bottom: 10px;
+  }
+
+  .demo-button {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    padding: 10px;
+  }
+
+  .logo-img {
+    height: 15px;
+  }
+
+  .demo-button {
+    padding: 8px 16px;
+  }
 }
